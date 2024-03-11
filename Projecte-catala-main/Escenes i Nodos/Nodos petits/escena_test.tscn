@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://wsth8gx6ti0q"]
+
+[ext_resource type="PackedScene" uid="uid://b0y0xe1kq83rq" path="res://Escenes i Nodos/Nodos petits/Personatge test.tscn" id="1_t12jx"]
+[ext_resource type="PackedScene" uid="uid://cnltfnm1pitoy" path="res://Models/Barco.glb" id="2_q3qw2"]
+
+[node name="Escena test" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_t12jx")]
+transform = Transform3D(0.135, 0, 0, 0, 0.135, 0, 0, 0, 0.135, -1.26859, 1.44283, 0.206216)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.93426, -0.107027, 0.340151, 0, 0.953895, 0.30014, -0.356591, -0.280409, 0.891187, 1.82509, 2.71207, 3.82314)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.717251, 0.696815, 0, -0.696815, 0.717251, 0, 6.77218, 12.9725)
+light_energy = 2.424
+
+[node name="Barco" parent="." instance=ExtResource("2_q3qw2")]
+transform = Transform3D(1.555, 0, 0, 0, 1.555, 0, 0, 0, 1.555, -2.03751, 2.17282, 0.276272)

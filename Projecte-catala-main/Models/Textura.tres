@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://blujy8wktearg"]
+
+[ext_resource type="Texture2D" uid="uid://bwsim0jogoyne" path="res://Models/textura vaixell.png" id="1_my5hw"]
+
+[resource]
+resource_name = "Textura"
+cull_mode = 2
+albedo_texture = ExtResource("1_my5hw")
+roughness = 0.5

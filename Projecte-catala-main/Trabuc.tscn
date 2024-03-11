@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtlkum03uauaf"]
+
+[ext_resource type="PackedScene" uid="uid://b8a1a0wnmdf5m" path="res://Models/Model pistola.blend" id="1_py4wi"]
+[ext_resource type="Script" path="res://Models/Trabuc.gd" id="2_tktbw"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Model pistola" parent="." instance=ExtResource("1_py4wi")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("2_tktbw")

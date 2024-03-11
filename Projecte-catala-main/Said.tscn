@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxh3we3iqk44v"]
+
+[ext_resource type="PackedScene" uid="uid://clvror12cvge2" path="res://Models/ModelSaïd.blend" id="1_av4rq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_blx1l"]
+size = Vector3(2.65375, 7.59741, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="ModelSaïd" parent="." instance=ExtResource("1_av4rq")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="ModelSaïd"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ModelSaïd/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.102264, 2.61292, 0)
+shape = SubResource("BoxShape3D_blx1l")

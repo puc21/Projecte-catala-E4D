@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://jw41818gk06d"]
+
+[ext_resource type="PackedScene" uid="uid://bag38270qa7xf" path="res://Models/CrisitiaNPC1.blend" id="1_yehnu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ohlgd"]
+size = Vector3(2.65375, 7.59741, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CrisitiaNPC1" parent="." instance=ExtResource("1_yehnu")]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="CrisitiaNPC1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CrisitiaNPC1/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.102264, 2.61292, 0)
+shape = SubResource("BoxShape3D_ohlgd")

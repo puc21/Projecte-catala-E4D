@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbg2hct1wvf8i"]
+
+[ext_resource type="PackedScene" uid="uid://b0y0xe1kq83rq" path="res://Escenes i Nodos/Nodos petits/Personatge test.tscn" id="1_cb2af"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b0m1a"]
+size = Vector3(21.2981, 1, 11.7606)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sfci4"]
+
+[sub_resource type="Environment" id="Environment_jsiue"]
+
+[node name="Test" type="Node3D"]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_cb2af")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.05689, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10559, 0, 2.38031)
+shape = SubResource("BoxShape3D_b0m1a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(20.8436, 0, 0, 0, 1, 0, 0, 0, 11.7607, -1, 0, 2.09015)
+mesh = SubResource("BoxMesh_sfci4")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.622776, 0.440096, -0.646889, -0.30523, 0.897951, 0.317048, 0.720406, -6.58195e-09, 0.693553, -18.3822, 10.6351, 11.167)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.641463, 0, -0.767154, 0, 1, 0, 0.767154, 0, 0.641463, -14.6675, 5.73015, 10.0327)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jsiue")

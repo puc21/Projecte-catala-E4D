@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://cbn1mhmx8folk"]
+
+[ext_resource type="PackedScene" uid="uid://iihgd25mcbik" path="res://Models/Carles.blend" id="1_0lbqy"]
+[ext_resource type="Script" path="res://Models/PlayerPistolScript.gd" id="2_onkr4"]
+[ext_resource type="AudioStream" uid="uid://b7w1bg4b7qdqm" path="res://Materials/sounds/Caminar/footsteps-on-wood-floor-14735 (mp3cut.net).mp3" id="3_do8ox"]
+[ext_resource type="AudioStream" uid="uid://bbxy8tyjw21vm" path="res://Materials/sounds/Caminar/502504__rudmer_rotteveel__wood-creak-single-v2.wav" id="4_fbd0h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kt2pi"]
+size = Vector3(2.65375, 7.59741, 1)
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_65jpt"]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("3_do8ox")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("4_fbd0h")
+stream_1/weight = 1.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Carles" parent="." instance=ExtResource("1_0lbqy")]
+script = ExtResource("2_onkr4")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Carles"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Carles/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.102264, 2.61292, 0)
+shape = SubResource("BoxShape3D_kt2pi")
+
+[node name="Camera3D" type="Camera3D" parent="Carles/CharacterBody3D"]
+transform = Transform3D(-1, -7.27596e-12, -0.000453862, -0.000108123, 0.971209, 0.238228, 0.000440795, 0.238228, -0.971209, 0, 5.56039, 0.690238)
+fov = 60.0
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Carles"]
+stream = SubResource("AudioStreamRandomizer_65jpt")

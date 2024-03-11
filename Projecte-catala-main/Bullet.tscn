@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo4c3nbiyq32p"]
+
+[ext_resource type="Script" path="res://Bullet.gd" id="1_ku6ie"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_ku6ie")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

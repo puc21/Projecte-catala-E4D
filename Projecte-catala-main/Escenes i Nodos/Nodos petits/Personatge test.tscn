@@ -1,0 +1,124 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0y0xe1kq83rq"]
+
+[ext_resource type="PackedScene" uid="uid://clvror12cvge2" path="res://Models/ModelSaïd.blend" id="1_sfevr"]
+
+[sub_resource type="GDScript" id="GDScript_kx8x1"]
+script/source = "extends CharacterBody3D
+
+
+const SPEED = 5.0
+const JUMP_VELOCITY = 4.5
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/3d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y -= gravity * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var input_dir = Input.get_vector(\"ui_left\", \"ui_right\", \"ui_up\", \"ui_down\")
+	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_78gue"]
+points = PackedVector3Array(-0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = SubResource("GDScript_kx8x1")
+
+[node name="ModelSaïd" parent="." instance=ExtResource("1_sfevr")]
+
+[node name="Skeleton3D" parent="ModelSaïd/Armature_001" index="0"]
+bones/0/position = Vector3(0.0972556, -1.9792, -1.94931)
+bones/0/rotation = Quaternion(-0.595011, -0.324547, 0.0222437, 0.734939)
+bones/1/rotation = Quaternion(0.0896403, 0.0876749, 0.0309744, 0.991624)
+bones/2/rotation = Quaternion(0.0338301, 1.11086e-16, 8.06573e-09, 0.999428)
+bones/3/rotation = Quaternion(0.175508, 6.76636e-16, 4.18443e-08, 0.984478)
+bones/4/rotation = Quaternion(0.17507, 0.201834, -0.0400802, 0.962812)
+bones/4/scale = Vector3(1, 1, 1)
+bones/5/position = Vector3(1.06069, -0.944613, -3.34124)
+bones/5/rotation = Quaternion(0.24865, -0.72278, -0.349955, 0.541567)
+bones/5/scale = Vector3(1, 1, 1)
+bones/6/rotation = Quaternion(0.0702045, 0.094303, 0.196531, 0.973424)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/rotation = Quaternion(0.134817, -0.219532, 0.245566, 0.93452)
+bones/8/rotation = Quaternion(0.275569, 0.143171, 0.0729956, 0.947753)
+bones/8/scale = Vector3(1, 1, 1)
+bones/9/position = Vector3(0.31823, -1.84144, -1.74496)
+bones/9/rotation = Quaternion(0.312435, 0.741131, 0.593938, -0.0186259)
+bones/9/scale = Vector3(1, 1, 1)
+bones/10/rotation = Quaternion(-0.350418, -0.0819411, -0.186774, 0.914116)
+bones/11/rotation = Quaternion(0.374042, -0.156354, 0.136646, 0.903866)
+bones/12/rotation = Quaternion(0.117959, -7.18061e-10, 0.0034341, 0.993012)
+bones/13/position = Vector3(-0.035171, -1.30217, -3.78678)
+bones/13/rotation = Quaternion(-0.234797, 0.0549881, 0.912513, 0.330404)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/rotation = Quaternion(0.567802, 0.0672834, 0.24846, 0.781883)
+bones/14/scale = Vector3(1, 1, 1)
+bones/15/rotation = Quaternion(0.151247, -0.800185, -0.0389798, 0.579059)
+bones/16/rotation = Quaternion(-0.107356, 0.481283, 0.214393, 0.843135)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/position = Vector3(-0.192603, -2.11289, -2.03693)
+bones/17/rotation = Quaternion(-0.638641, 0.58988, 0.150309, -0.47073)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(-0.357681, -0.456046, -0.125441, 0.805202)
+bones/19/rotation = Quaternion(0.365151, -0.0793637, -0.0395652, 0.926715)
+bones/20/rotation = Quaternion(-0.0148494, -0.0400878, -0.0197996, 0.99889)
+bones/21/position = Vector3(0.902996, 0.751708, -2.1174)
+bones/21/rotation = Quaternion(0.298757, 0.00679553, 0.482362, 0.823423)
+bones/21/scale = Vector3(1, 1, 1)
+bones/22/position = Vector3(-0.89623, -2.3454, -2.74496)
+bones/22/rotation = Quaternion(0.727555, 0.169162, 0.172227, 0.642173)
+bones/22/scale = Vector3(1, 1, 1)
+bones/23/position = Vector3(0.748265, 0.040287, -3.8308)
+bones/23/rotation = Quaternion(0.291804, 0.21994, -0.663831, 0.652537)
+bones/24/position = Vector3(0.816779, 0.121555, -3.89434)
+bones/24/rotation = Quaternion(-0.226703, 0.253248, 0.431261, 0.835754)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/position = Vector3(0.816779, 0.121554, -3.89434)
+bones/25/rotation = Quaternion(-0.785353, -0.332051, -0.452439, 0.26127)
+bones/25/scale = Vector3(1, 1, 1)
+bones/26/position = Vector3(0.428371, 0.035702, -3.85484)
+bones/26/rotation = Quaternion(0.24435, -0.26403, 0.69309, 0.624666)
+bones/27/position = Vector3(0.367833, 0.11512, -3.92808)
+bones/27/rotation = Quaternion(-0.190104, -0.318381, -0.435049, 0.820504)
+bones/27/scale = Vector3(1, 1, 1)
+bones/28/position = Vector3(0.367833, 0.115119, -3.92808)
+bones/28/rotation = Quaternion(-0.821715, 0.30028, 0.396001, 0.278926)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/position = Vector3(0.578851, -0.221395, -3.66333)
+bones/29/rotation = Quaternion(-0.158407, -0.0429334, -0.0253601, 0.986114)
+bones/30/position = Vector3(0.564454, -0.412057, -3.55641)
+bones/30/rotation = Quaternion(-0.158407, -0.0429334, -0.0253601, 0.986114)
+bones/31/position = Vector3(0.742436, -0.338971, -3.6168)
+bones/31/rotation = Quaternion(-0.0603372, -0.0754414, -0.0863851, 0.991567)
+bones/32/position = Vector3(0.41296, -0.343694, -3.64156)
+bones/32/rotation = Quaternion(-0.0677131, 5.17908e-05, 0.095783, 0.993096)
+bones/33/position = Vector3(1.74508, -2.39996, -2.68856)
+bones/33/rotation = Quaternion(0.710914, 0.00159376, -0.00836419, 0.703227)
+bones/33/scale = Vector3(1, 1, 1)
+
+[node name="AnimationPlayer" parent="ModelSaïd" index="1"]
+autoplay = "idle_001"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2.59, 0, 0, 0, 7, 0, 0, 0, 1, 0, 2.43065, 0)
+shape = SubResource("ConvexPolygonShape3D_78gue")
+
+[editable path="ModelSaïd"]

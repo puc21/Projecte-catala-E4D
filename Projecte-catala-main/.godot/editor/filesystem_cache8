@@ -1,0 +1,87 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1710189751
+Bala.gd::GDScript::-1::1710188256::0::1::::<>StaticBody3D<>::
+Bala.tscn::PackedScene::7560576409782220960::1710188202::0::1::::<><>::
+Barco.tscn::PackedScene::2415696653170321083::1710187175::0::1::::<><>::uid://cae3fkw0i35mb::::res://Models/Barco.blend
+Blanca Guinavet.tscn::PackedScene::384138218468126949::1710187175::0::1::::<><>::uid://ijqq1bga78bi::::res://Models/ModelBlanca.blend
+Blanca.tscn::PackedScene::3814037914314394903::1710187175::0::1::::<><>::uid://yx5p7ls4erfy::::res://Models/ModelBlanca.glb
+Bullet.gd::GDScript::-1::1710188285::0::1::::<>StaticBody3D<>::
+Bullet.tscn::PackedScene::3429103570452731861::1710188278::0::1::::<><>::res://Bullet.gd
+Carles.blend::PackedScene::2870823785691081888::1710110784::1710178880::1::::<><>::
+Carles.tscn::PackedScene::8574725719851812819::1710188512::0::1::::<><>::uid://iihgd25mcbik::::res://Models/Carles.blend<>res://Models/PlayerPistolScript.gd<>uid://b7w1bg4b7qdqm::::res://Materials/sounds/Caminar/footsteps-on-wood-floor-14735 (mp3cut.net).mp3<>uid://bbxy8tyjw21vm::::res://Materials/sounds/Caminar/502504__rudmer_rotteveel__wood-creak-single-v2.wav
+Cristia1.tscn::PackedScene::678924901706640853::1710187175::0::1::::<><>::uid://bag38270qa7xf::::res://Models/CrisitiaNPC1.blend
+Cristia2.tscn::PackedScene::1164680404571199075::1710187175::0::1::::<><>::uid://cmm87fpx58phs::::res://Models/CrisitiaNPC2.blend
+Malek.tscn::PackedScene::1116620280902903810::1710187176::0::1::::<><>::uid://j3ey38ee1013::::res://Models/ModelMalek.blend
+Menu principal.tscn::PackedScene::722098336507692470::1710187175::0::1::::<><>::uid://djcmf3bp3cv37::::res://Fonts/Extra/Morgian.otf<>uid://4c8id32dnvgw::::res://Fonts/Menus/Boohong.otf
+panel_container.tscn::PackedScene::1831842988440681895::1710018571::0::1::::<><>::uid://4c8id32dnvgw::::res://Fonts/Menus/Boohong.otf<>uid://djcmf3bp3cv37::::res://Fonts/Extra/Morgian.otf
+PlayerPistol.gd::GDScript::-1::1710188202::0::1::::<>Node3D<>::
+PlayerPistol.tscn::PackedScene::7668472190649857629::1710188055::0::1::::<><>::res://PlayerPistol.gd<>uid://dufwqkw7s1mqt::::res://Carles.tscn
+Said.tscn::PackedScene::8789795716029051699::1710187176::0::1::::<><>::uid://clvror12cvge2::::res://Models/ModelSaïd.blend
+TEST.tscn::PackedScene::645099043412956199::1710186943::0::1::::<><>::uid://baogf2uvkfmbb::::res://Barco.tscn<>uid://dufwqkw7s1mqt::::res://Carles.tscn
+Trabuc.gd::GDScript::-1::1710187443::0::1::::<>Node3D<>::
+Trabuc.tscn::PackedScene::8516201791501592405::1710187780::0::1::::<><>::uid://b8a1a0wnmdf5m::::res://Models/Model pistola.blend<>res://Models/Trabuc.gd
+::res://Escenes i Nodos/::1710176884
+::res://Escenes i Nodos/Escenes completes/::1710110784
+test.tscn::PackedScene::4857068472520158854::1710110784::0::1::::<><>::uid://b0y0xe1kq83rq::::res://Escenes i Nodos/Nodos petits/Personatge test.tscn
+::res://Escenes i Nodos/Nodos petits/::1710176881
+escena_test.tscn::PackedScene::1582481226656264810::1710174787::0::1::::<><>::uid://b0y0xe1kq83rq::::res://Escenes i Nodos/Nodos petits/Personatge test.tscn<>uid://cnltfnm1pitoy::::res://Models/Barco.glb
+Personatge test.tscn::PackedScene::4192246089555700490::1710110784::0::1::::<><>::uid://clvror12cvge2::::res://Models/ModelSaïd.blend
+::res://Fonts/::1710015997
+::res://Fonts/Extra/::1710016246
+Morgian.otf::FontFile::7795829405130097308::1660750772::1710016246::1::::<><>::
+::res://Fonts/Menus/::1710016247
+Boohong.jpg::CompressedTexture2D::617255979998010120::1708951866::1710016247::1::::<><>::
+Boohong.otf::FontFile::2041623370179466158::1708951598::1710016246::1::::<><>::
+Boohong.ttf::FontFile::677069280086620591::1708951594::1710016246::1::::<><>::
+More Info.txt::TextFile::-1::1708951660::0::1::::<><>::
+::res://Fonts/Subtitols/::1710016246
+OpenDyslexic-Bold.otf::FontFile::5779684507663441082::1415136722::1710016246::1::::<><>::
+OpenDyslexic-BoldItalic.otf::FontFile::7474671134574624350::1415136684::1710016246::1::::<><>::
+OpenDyslexic-Italic.otf::FontFile::6843983634756868877::1415136622::1710016246::1::::<><>::
+OpenDyslexic-Regular.otf::FontFile::255728375073962465::1415136528::1710016246::1::::<><>::
+OpenDyslexicAlta-Bold.otf::FontFile::4290062858383695310::1415136850::1710016246::1::::<><>::
+OpenDyslexicAlta-BoldItalic.otf::FontFile::6597058185700140792::1415136820::1710016246::1::::<><>::
+OpenDyslexicAlta-Italic.otf::FontFile::2220913372943719996::1415136742::1710016246::1::::<><>::
+OpenDyslexicAlta-Regular.otf::FontFile::8997376205720416778::1415136934::1710016246::1::::<><>::
+OpenDyslexicMono-Regular.otf::FontFile::9085063496916475097::1415136654::1710016246::1::::<><>::
+README.txt::TextFile::-1::1415653758::0::1::::<><>::
+::res://Materials/::1710185786
+textura vaixell.png::CompressedTexture2D::2317910569313841429::1710013527::1710014528::1::::<><>::
+::res://Materials/sounds/::1710186663
+::res://Materials/sounds/Caminar/::1710186907
+502504__rudmer_rotteveel__wood-creak-single-v2.wav::AudioStreamWAV::2505607390158133910::1710185728::1710186214::1::::<><>::
+footsteps-on-wood-floor-14735 (mp3cut.net).mp3::AudioStreamMP3::4679460778333545368::1710186878::1710186907::1::::<><>::
+::res://Materials/sounds/Navaja/::1710186696
+118792__lmbubec__1_knife_slash_a.wav::AudioStreamWAV::872416440624763784::1710186649::1710186696::1::::<><>::
+::res://Materials/sounds/Trabuc/::1710185889
+131571__deleted_user_389799__rifle_shot_vtkproductions.wav::AudioStreamWAV::6953836311406283918::1710185802::1710185889::1::::<><>::
+457044__gerainsan__slow-motion-gun-shot.wav::AudioStreamWAV::4267153327427582345::1710185826::1710185889::1::::<><>::
+::res://Models/::1710189576
+Barco.blend::PackedScene::4782808443536337169::1710110784::1710179007::1::::<><>::uid://blujy8wktearg::::res://Models/Textura.tres
+Barco.glb::PackedScene::5709167744350275760::1710064359::1710064359::1::::<><>::
+Barco_textura vaixell.png::CompressedTexture2D::9222489303327596042::1710064359::1710064359::1::::<><>::
+Captura de pantalla 2024-03-10 191335.png::CompressedTexture2D::1278180482391640532::1710110784::1710176910::1::::<><>::
+Carles.blend::PackedScene::578461705508480366::1710110784::1710178857::1::::<><>::uid://shfpfl0ibqbk::::res://Models/Captura de pantalla 2024-03-10 191335.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+Carles.gd::GDScript::-1::1710188202::0::1::::<>Node3D<>::
+Carles.tscn::PackedScene::8499810800833318981::1710189380::0::1::::<><>::uid://iihgd25mcbik::::res://Models/Carles.blend<>res://Models/PlayerPistolScript.gd<>uid://b7w1bg4b7qdqm::::res://Materials/sounds/Caminar/footsteps-on-wood-floor-14735 (mp3cut.net).mp3<>uid://bbxy8tyjw21vm::::res://Materials/sounds/Caminar/502504__rudmer_rotteveel__wood-creak-single-v2.wav
+Creu.blend::PackedScene::7628174891857892531::1710110784::1710178858::1::::<><>::uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+CrisitiaNPC1.blend::PackedScene::2400567425935282227::1710110784::1710178864::1::::<><>::uid://shfpfl0ibqbk::::res://Models/Captura de pantalla 2024-03-10 191335.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+CrisitiaNPC2.blend::PackedScene::5641941117132794436::1710110784::1710178870::1::::<><>::uid://shfpfl0ibqbk::::res://Models/Captura de pantalla 2024-03-10 191335.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+Model pistola.blend::PackedScene::4704232513236369812::1710110784::1710178871::1::::<><>::uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+ModelBlanca.blend::PackedScene::581091560903355438::1710110784::1710178872::1::::<><>::uid://fwpefcdxae33::::res://Models/textura said.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+ModelBlanca.glb::PackedScene::1733862930944541046::1710064359::1710064359::1::::<><>::
+ModelBlanca_textura said.png::CompressedTexture2D::6057668621753658309::1710064359::1710064359::1::::<><>::
+ModelMalek.blend::PackedScene::689789418701237060::1710110784::1710178873::1::::<><>::uid://6jjtx4aeu2d3::::res://Models/Textura malek.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+ModelMalek.glb::PackedScene::6285954132571255523::1710064359::1710064359::1::::<><>::
+ModelMalek_Captura de pantalla 2024-03-09 102608.png::CompressedTexture2D::7410618209775495631::1710064359::1710064359::1::::<><>::
+ModelSaïd.blend::PackedScene::5589328704523640931::1710110784::1710178875::1::::<><>::uid://fwpefcdxae33::::res://Models/textura said.png<>uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+ModelSaïd.glb::PackedScene::4466991224094759234::1710064359::1710064359::1::::<><>::
+navalla.blend::PackedScene::1361794051332935745::1710110784::1710178875::1::::<><>::uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+PlayerPistol.tscn::PackedScene::4871467580456229328::1710189375::0::1::::<><>::uid://iihgd25mcbik::::res://Models/Carles.blend<>res://Models/PlayerPistolScript.gd<>uid://b7w1bg4b7qdqm::::res://Materials/sounds/Caminar/footsteps-on-wood-floor-14735 (mp3cut.net).mp3<>uid://bbxy8tyjw21vm::::res://Materials/sounds/Caminar/502504__rudmer_rotteveel__wood-creak-single-v2.wav
+PlayerPistolScript.gd::GDScript::-1::1710189576::0::1::::<>Node3D<>::
+test.blend::PackedScene::5173709850547605989::1710064359::1710178876::1::::<><>::
+Textura malek.png::CompressedTexture2D::2195015188427177230::1710110784::1710176910::1::::<><>::
+textura said.png::CompressedTexture2D::397278692720000692::1710110784::1710176910::1::::<><>::
+textura vaixell.png::CompressedTexture2D::3968242536403565678::1710110784::1710176910::1::::<><>::
+Textura.tres::StandardMaterial3D::3200376598517422808::1710179007::0::1::::<><>::uid://bwsim0jogoyne::::res://Models/textura vaixell.png
+Trabuc.gd::GDScript::-1::1710187780::0::1::::<>Node3D<>::
